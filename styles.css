@@ -26,7 +26,6 @@ header{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    border: 3px solid black;
     color: white;
     position: fixed;
     z-index:auto;
@@ -75,9 +74,8 @@ li a {
     color: white;
     float: right;
     line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    
+    margin-right: 10px;
+    cursor: pointer;  
 }
             /*MENU DESPLEGABLE*/
 
@@ -192,6 +190,9 @@ hr {
         padding: 20px;
     
           }
+.greeting {
+    font-size: 35px;
+}
 
       /* PIE DE PAGINA*/
 
