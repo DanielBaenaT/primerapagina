@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+}
+body{
+background: #fff;
+    }
+    
+    /* ESTILOS GENERALES */
+
+
+.fuente-clara{color: #eeeeee;}
+
+.fuente-oscura{color: #22211f;}
+
+.fuente-acento{color: #b59a61;}
+    
+    /*ENCABEZADO*/
+
+header{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border: 3px solid black;
+    color: white;
+    position: fixed;
+    z-index:auto;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 12px;
+}
+header h1{
+        padding: 20px;
+         }
+
+    /*MENU NAVEGACION*/
+
+header h1.logo {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 80px;
+    padding:  0 50px;      
+               }
+header nav {
+    float:right;
+           }
+nav ul li {
+    display: inline-block;
+    margin-right: 5px;
+    line-height: 80px;
+          }
+nav a {
+       color: white;
+       text-decoration: none;
+       padding: 5px;
+      }
+nav a:hover {
+            color: #1bf7de;
+            }
+li a {
+    color: white;
+}
+#check {
+    display: none;
+}
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    
+}
+            /*MENU DESPLEGABLE*/
+
+
+
+    /*CONTENIDO*/
+main{
+    background-color: rgb(25, 245, 99);
+    width: 100%;
+    padding: 20px;
+    border: 3px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.container {
+    display: flex;
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+.principal p {
+    font-size: 25px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+.button{
+        color: #fff;
+        background-color: #5995da;
+        font-weight: bold;
+        padding: 20px;
+        text-align: center;
+        border: 2px solid #5d6d06; /* Dark gray */
+        border-radius: 5px;
+        cursor: pointer; 
+        
+    
+       }   
+.button.contactarme{
+        background-color: #eeb75a;
+        font-weight: bold;
+        
+                   }   
+
+.principal {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+     
+
+
+div a{
+        color: black;
+     }
+.section-carrusel img{
+        width: 100%;
+        margin-top: 20px; 
+                     }
+ 
+.button a:hover{
+        color: white;
+               }
+.card {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.card_recursos {
+    width: 310px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px gray;
+    border: solid rgba(0, 0, 255, 0) 2px;
+    border-radius: 20px;
+}
+.card_recursos:hover {
+    border: solid blue 2px;
+}
+.card_recursos img {
+    width: 240px;
+    border-radius: 25% 10%;
+    box-shadow: 2px 2px 10px gray;
+    padding: 10px;
+}
+.card_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+hr {
+    width: 100%;
+    height: 2px;
+    background: gray;
+    margin: 20px 5px;
+}
+.enlace:hover {
+    color: white;
+}
+ 
+    
+            
+.recursos {
+        text-align: center;
+        padding: 20px;
+    
+          }
+
+      /* PIE DE PAGINA*/
+
+footer{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    border: 3px solid black;
+    clear: both;
+    text-align: center;
+}
+
+.menu-pie li a:hover{
+    color: #1bf7de;
+                    }
+.menu-pie {
+    color: white;
+}
+/*media-query*/
+@media (max-width: 768px){
+    
+    .principal {
+        text-align: center;
+    }
+    .imagen {
+        margin-bottom: 40px;
+    }
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn {
+        color: green;
+    }
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 768px) {
+    .principal {
+        width: 100%;
+        height: 450px;
+    }
+}
+@media (min-width: 768px) {
+    .principal {
+        width: 100%;
+        padding: 20px;
+    }
+}
